@@ -35,4 +35,4 @@ userSchema.virtual('friendCount')
         return this.friends.length;
     });
 
-module.exports = Group;
+module.exports = User;
