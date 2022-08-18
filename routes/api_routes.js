@@ -43,7 +43,9 @@ api_router.route('/thoughts/:thoughtId')
     .delete(deleteThought);
 
 api_router.route('/thoughts/:thoughtId/reactions')
-    .post(createReaction)
-    .delete(deleteReaction);
+    .post(createReaction);
     
+api_router.route('/thoughts/:thoughtId/reactions/:reactionId')
+    .delete(deleteReaction);
+
 module.exports = api_router;
